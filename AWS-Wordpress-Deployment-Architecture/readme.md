@@ -44,7 +44,7 @@ The infrastructure contains the following components:
 
 Add your architecture diagram here.
 
-![AWS WordPress Architecture]()
+<img width="1536" height="1024" alt="AWS WordPress Architecture with Terraform" src="https://github.com/user-attachments/assets/0104cf88-d37e-41fb-9bbe-a0181d2ff948" />
 
 *Figure 1: AWS WordPress deployment architecture.*
 
@@ -115,7 +115,7 @@ aws --version
 Configure AWS credentials using an appropriate method, such as an AWS CLI profile or environment variables.
 
 ```bash
-aws configure
+aws configure![AWS WordPress Architecture](
 aws sts get-caller-identity
 ```
 
@@ -157,7 +157,8 @@ The AMI must exist in the selected AWS Region and must be compatible with the in
 
 **Screenshot 2 — Terraform configuration**
 
-![Terraform variables](screenshots/terraform-variables.png)
+<img width="650" height="303" alt="image" src="https://github.com/user-attachments/assets/c30b3d08-336b-471d-a038-49695a079f0c" />
+
 
 *Figure 2: Terraform deployment variables configured locally. Hide sensitive information before capturing the screenshot.*
 
@@ -177,7 +178,8 @@ Expected result: Terraform initialization completes successfully.
 
 **Screenshot 3 — Terraform initialization**
 
-![Terraform init](screenshots/05-terraform-init.png)
+<img width="943" height="432" alt="image" src="https://github.com/user-attachments/assets/62241394-c625-4704-9c13-9817e4f56bfe" />
+
 
 ### Step 2: Format and Validate the Configuration
 
@@ -197,7 +199,8 @@ terraform validate
 
 **Screenshot 4 — Terraform validation**
 
-![Terraform validation](screenshots/terraform-validate.png)
+<img width="768" height="90" alt="image" src="https://github.com/user-attachments/assets/99dec856-4d91-4fc5-ba77-de60c743c441" />
+
 
 ### Step 3: Review the Execution Plan
 
@@ -215,7 +218,8 @@ Do not proceed if the plan contains unexpected destructive changes.
 
 **Screenshot 5 — Terraform plan**
 
-![Terraform plan](screenshots/06-terraform-plan.png)
+<img width="1075" height="478" alt="image" src="https://github.com/user-attachments/assets/7cd2799d-9255-49fe-b82c-97b758176560" />
+
 
 ### Step 4: Provision the AWS Infrastructure
 
@@ -233,7 +237,7 @@ Terraform will create the resources described in the configuration, subject to A
 
 **Screenshot 6 — Terraform apply**
 
-![Terraform apply](screenshots/07-terraform-apply.png)
+<img width="1075" height="478" alt="image" src="https://github.com/user-attachments/assets/0547b595-5266-40a3-8c86-f75e584ccf2f" />
 
 ### Step 5: Verify the VPC and Subnets
 
@@ -253,7 +257,7 @@ Confirm that the two public subnets and one private subnet have the expected CID
 
 **Screenshot 7 — VPC and subnet configuration**
 
-![AWS VPC and subnets](screenshots/01-aws-vpc.png)
+<img width="1603" height="763" alt="image" src="https://github.com/user-attachments/assets/bde2062a-fea2-4587-af3b-172f899a2052" />
 
 ### Step 6: Verify Gateways and Route Tables
 
@@ -269,7 +273,8 @@ Verify that:
 
 **Screenshot 8 — Route tables**
 
-![AWS route tables](screenshots/03-route-tables.png)
+<img width="1603" height="763" alt="image" src="https://github.com/user-attachments/assets/49e7dc42-e6ef-49cc-a576-0a12031fda39" />
+
 
 ### Step 7: Verify the EC2 Instances
 
@@ -285,7 +290,7 @@ Wait for instance initialization and the user data scripts to finish.
 
 **Screenshot 9 — EC2 instances**
 
-![EC2 instances](screenshots/08-ec2-instances.png)
+<img width="1603" height="763" alt="image" src="https://github.com/user-attachments/assets/58d9c478-14c3-4cf9-b56c-87bbc6b6be4f" />
 
 ### Step 8: Verify Security Groups
 
@@ -307,7 +312,8 @@ The configured egress rules allow outbound traffic.
 
 **Screenshot 10 — Security groups**
 
-![Security groups](screenshots/04-security-groups.png)
+<img width="1603" height="763" alt="image" src="https://github.com/user-attachments/assets/46adc2bc-8999-4e1b-ac80-476c1199859b" />
+
 
 ## 8. Automated Instance Configuration
 
@@ -361,13 +367,14 @@ Follow the on-screen WordPress setup process to configure the website.
 
 **Screenshot 11 — WordPress setup page**
 
-![WordPress setup](screenshots/10-wordpress-setup.png)
+<img width="1910" height="985" alt="image" src="https://github.com/user-attachments/assets/d809a0c2-9b3d-4b2d-bb85-4110fa7953b5" />
 
 After completing the setup, capture a screenshot of the working website.
 
 **Screenshot 12 — WordPress website**
 
-![WordPress website](screenshots/09-wordpress-website.png)
+<img width="1910" height="985" alt="image" src="https://github.com/user-attachments/assets/37174f87-03bd-404d-ad70-c3b52e3eebfe" />
+
 
 ## 10. Validation Checklist
 
@@ -499,7 +506,7 @@ These enhancements are not represented as implemented features in the current co
 - Application-to-database connectivity.
 - Infrastructure troubleshooting.
 
-## 15. Author
+## 15. Author - Niharika Karkra
 
 **DevOps Learner | AWS | Terraform | Linux | Infrastructure Automation**
 
